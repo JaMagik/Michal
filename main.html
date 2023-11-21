@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Ofert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background-image" style="background-image: url('PV.jpg');"></div>
+    <div class="form-container">
+        <h2>Schematy Michał</h2>
+        <form id="offerForm">
+            <div class="input-group">
+                <label for="userName">Imię i Nazwisko:</label>
+                <input type="text" id="userName" name="userName" required>
+            </div>
+            <div class="input-group">
+                <label for="instalationType">Nazwa instalacji :</label>
+                <input type="text" id="instalationType" name="instalationType" required>
+            </div>
+            <div class="input-group">
+              <label for="ZKP">Złącze kablowe </label>
+              <input type="text" id="ZKP" name="ZKP" required>
+          </div>
+            <div class="input-group">
+                <label for="panelType">Rodzaj paneli:</label>
+                <input type="text" id="panelType" name="panelType" required>
+            </div>
+            <div class="input-group">
+                <label for="inverterName">Nazwa Falownika:</label>
+                <input type="text" id="inverterName" name="inverterName" required>
+            </div>
+            <button type="button" id="generatePdfButton">Generuj PDF</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
